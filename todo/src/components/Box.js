@@ -3,8 +3,9 @@ import Items from './Items'
 
 export default function Box(props) {
   const items = props.data.map(
-    ()=> {
-      return <Items/>
+    (singleData,key)=> {
+      
+      return <Items key={key} items={singleData.item} time={singleData.time}/>
     }
   )
   return (

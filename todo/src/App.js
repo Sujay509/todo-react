@@ -8,7 +8,16 @@ function App() {
 
 
   const addToDoHandler = (item)=>{
-
+    //  console.log(item);
+    setToDo(
+      [
+        ...todos,
+        {
+          item,
+          time: new Date().toLocalTimeString()
+        }
+      ]
+    )
   }
   return (
     <div className='bg-black h-screen p-3'>
