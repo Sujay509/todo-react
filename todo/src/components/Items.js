@@ -6,14 +6,15 @@ import {useState} from 'react'
 export default function Items() {
     const [done,setDone] = useState(false);
       return (
-    <div onClick={() => setDone(!done)} className={' ${done === true : select-none cursor-pointer w-full border-b-2 p-3 flex justify-between'}>
+    <div onClick={() => setDone(!done)} className={` select-none cursor-pointer w-full border-b-2 p-3 flex justify-between`}>
         {/* leftside timings*/}
         <div>
-           <span className='pr-2 text-[15px] text-slate-400'>times</span>
-           <span>itemsssss
+           <span className='pr-2 text-[15px] text-slate-400'>times
+           </span>
+           <span className={`${done === true ? 'line-through' : ' '}`}>itemsssss
             </span> 
         </div>
-        {/* rifgtside delete button */}
+        {/* rightside delete button */}
         <div>
             <MdDeleteForever /> 
         </div>
