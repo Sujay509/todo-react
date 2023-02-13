@@ -13,10 +13,7 @@ export default function Input (props) {
       rounded-[50%] flex justify-center items-center '
       onClick={()=>props.handler(inputBox.current.value)}>
 
-{/* <div className='cursor-pointer w-[50px] h-[50px] bg-red-500 text-3xl text-white 
-      rounded-[50%] flex justify-center items-center '
-      onClick={() => setToDo(inputBox.current.value)}> */}
-        
+
         
 
         <AiOutlinePlus />
