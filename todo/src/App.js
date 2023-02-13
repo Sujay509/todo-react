@@ -13,12 +13,14 @@ function App() {
       [
         ...todos,
         {
-          item,
-          time: new Date().toLocalTimeString()
+          item: item,
+          time: new Date().toTimeString()
         }
       ]
     )
   }
+
+  console.log(todos);
   return (
     <div className='bg-black h-screen p-3'>
      <div className="rounded mx-auto max-w-[750px] min-h-[550px] shadow-2xl bg-white">
