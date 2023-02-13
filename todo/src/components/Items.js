@@ -17,7 +17,7 @@ export default function Items(props) {
             </span> 
         </div>
         {/* rightside delete button */}
-        <div>
+        <div onClick={()=>props.removeHandler(props.id)}> 
             <MdDeleteForever /> 
         </div>
     </div>
